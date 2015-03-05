@@ -2,13 +2,15 @@ Rails.application.routes.draw do
 
   resources :pages
   resources :reservations
-
-  get 'pages/index'
-#get 'pages/admin'
-
-
-
+  
   root "pages#index"
+  
+  get 'pages/index'
+  get '/admin' => 'pages#admin'
+
+
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
