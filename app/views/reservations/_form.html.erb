@@ -1,0 +1,30 @@
+<%= form_for reservation do |f| %>
+	<div>School Year</div>
+	<%= f.text_field :school_year %>
+	<div>Last Name</div>
+	<%= f.text_field :last_name %>
+	<div>First Name</div>
+	<%= f.text_field :first_name %>
+	<div>M.I</div>
+	<%= f.text_field :middle_initial %>
+	<div>Mobile #</div>
+	<%= f.text_field :mobile_number %>
+	<div>Address</div>
+	<%= f.text_area :address %>
+	<div>Student ID#</div>
+	<%= f.text_field :id_number %>
+	<div>Year Level</div>
+	<%= f.text_field :year_level %>
+	<div>Course</div>
+	<%= f.text_field :course %>
+	<div>Dorm Scholar</div>
+	<%= f.text_field :dorm_scholar %>
+	<div>Building</div>
+	<%= f.text_field :building %>
+	<div>Room #</div>
+	<%= f.text_field :room_number %>
+	<div>Check In Date</div>
+	<%= f.date_select :check_in %>
+	<%= f.submit "Save" %>
+<% end %>
+
