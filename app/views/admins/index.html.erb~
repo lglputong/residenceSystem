@@ -1,5 +1,4 @@
-<h1>Pending Reservations</h1>
-<br>
+<%= link_to "Reservations", reservations_path %>
 
 <% @reservations.each do |reservation| %>
 	<%= reservation.id_number %> | 
