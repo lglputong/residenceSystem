@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   
   get 'pages/index'
   get '/admin' => 'pages#admin'
-
+  get '/studentlogin' => 'pages#student_login'
 
 
   
