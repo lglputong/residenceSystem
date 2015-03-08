@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   root "pages#index"
   
   get 'pages/index'
-  get '/admin' => 'pages#admin'
+  get '/admin' => 'pages#admin_login'
+  get '/about' => 'pages#about'
+  get '/contact' => 'pages#contact'
   get '/studentlogin' => 'pages#student_login'
 
 
