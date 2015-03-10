@@ -6,20 +6,31 @@
 	<meta name="author" content="">
 	<title>Ateneo Residence Halls Reservation System</title>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans:700,400' rel='stylesheet' type='text/css'>
 </head>
 
-<div>
-	<ul class="nav nav-pills">
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+	<ul class="nav navbar-nav">
 	  <li role="presentation" class="active"><a href="#">Home</a></li>
 	  <li role="presentation"><a href="about">About</a></li>
 	  <li role="presentation"><a href="contact">Contact Us</a></li>
-	  <li role="presentation"><a href="admin">Admin</a></li>
 	</ul>
-</div>
-	<br />
+	<ul class="nav navbar-nav navbar-right">
+	  	<li id="right" role="presentation"><a href="admin">Admin</a></li>
+	</ul>
+  </div>
+</nav>
+
+	<br/>
+	<div class = "container">
 	<h1> ATENEO RESIDENCE HALLS </h1>
 	<h2> RESERVATION SYSTEM </h2>
-	<div class = "container">
+</br>
+
+	
 		<div class = "row">
 			<div class = "col-md-7">
 				<img src="./images/dorm.jpg" class="img-responsive" alt="dorm pic"> </img>
@@ -29,8 +40,7 @@
 				<br />
 				LOREM IPSUM
 				<br />
-				Duis aute irure Duis aute irureDuis aute irureDuis aute irureDuis aute irure
-				<br />
+hea				<br />
 				LOREM IPSUM
 				<br />
 				Duis aute irure Duis aute irureDuis aute irureDuis aute irureDuis aute irure
@@ -38,9 +48,9 @@
 		</div>
 		<div class = "row">
 			<div class = "col-md-6">
-				FACILITIES & EQUIPMENT
+				<h4>FACILITIES</h4>
 				<div class = "row">
-					<div class = "col-md-6">
+					<div id="reserve" class = "col-md-6">
 						<div class = "col-md-4">
 							<img src = "./images/dorm.jpg" class="img-responsive" alt = "yolo">
 						</div>
@@ -54,12 +64,12 @@
 								<%= link_to "New Reservation", new_reservation_path %>
 						</div>
 					</div>
-					<div class = "col-md-6">
+					<div id="view" class = "col-md-6">
 						<div class = "col-md-4">
 							<img src = "./images/dorm.jpg" class="img-responsive" alt = "yolo">
 						</div>
 						<div class = "col-md-8">
-							Reservations
+							View <br> Gallery
 							<br />
 							<a class="btn btn-default" href="#" role="button"> RESERVE FACILITY </a>
 							<br />
@@ -71,13 +81,13 @@
 				</div>
 			</div>
 			<div class = "col-md-6">
-				ADMISSION
+				<h4>READMISSION</h4>
 				<div class = "row">
-					<div class = "col-md-6">
+					<div id="reserve" class = "col-md-6">
 						<div class = "col-md-4">
 							<img src = "./images/dorm.jpg" class="img-responsive" alt = "yolo">
 						</div>
-						<div class = "col-md-8">
+						<div  class = "col-md-8">
 							Reservations
 							<br />
 							<a class="btn btn-default" href="#" role="button"> RESERVE FACILITY </a>
@@ -87,7 +97,7 @@
 								<%= link_to "New Reservation", new_reservation_path %>
 						</div>
 					</div>
-					<div class = "col-md-6">
+					<div id="view" class = "col-md-6">
 						<div class = "col-md-4">
 							<img src = "./images/dorm.jpg" class="img-responsive" alt = "yolo">
 						</div>
@@ -104,5 +114,22 @@
 				</div>
 			</div>
 		</div>
+	
+
+		<div id="footer" class="row">
+	  <div class="col-xs-12 col-md-8">
+	  	<p>
+				ATENEO DE MANILA UNIVERSITY. ALL RIGHTS RESERVED.
+				<br>
+				Katipunan Avenue Loyola Heights, Quezon City 1108, Philippines
+				<br>
+				426-6001 loc.5901-04 | ateneo.edu/univdorm
+			</p>
+	  </div>
+	  <div class="col-xs-6 col-md-4">
+	  	<p>Powered by</p>
+	  </div>
 	</div>
+</div>
+
 </body>
