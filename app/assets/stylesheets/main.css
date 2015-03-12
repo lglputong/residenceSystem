@@ -1,3 +1,4 @@
+
 body{
 	background-color: #efefef;
 	/*font-family: 'Quattrocento Sans', sans-serif;*/
@@ -34,16 +35,6 @@ body{
 
 .navbar-default .navbar-nav .active a:hover {
 	color: #ffffff; 
-}
-
-#reserve {
-	color: #ffffff;
-	background-color: #e75735;
-}
-
-#view {
-	color: #ffffff;
-	background-color: #48cfad;
 }
 
 a:hover{
