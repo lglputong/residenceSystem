@@ -1,0 +1,9 @@
+<h1>Pending Reservations</h1>
+<br>
+
+<% @reservations.each do |reservation| %>
+	<%= reservation.id_number %> | 
+	<%= link_to "Delete", reservation_path(reservation.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<% end %>
+
+

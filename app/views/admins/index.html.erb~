@@ -1,0 +1,8 @@
+<%= link_to "Reservations", reservations_path %>
+
+<% @reservations.each do |reservation| %>
+	<%= reservation.id_number %> | 
+	<%= link_to "Delete", reservation_path(reservation.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<% end %>
+
+

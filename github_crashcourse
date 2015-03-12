@@ -1,0 +1,36 @@
+PULL EXISTING REPO FROM GITHUB FOR THE FIRST TIME
+-- terminal
+git init
+git clone https://github.com/Zaaraah/reservationSystem.git
+*go in folder (cd reservationSystem)*
+git pull
+
+PULL EXISTING REPO FROM GITHUB
+--terminal
+*while in folder*
+git init
+git status
+git pull https://github.com/Zaaraah/reservationSystem.git
+
+PUSH EDITED STUFF TO EXISTING REPO IN GITHUB (make sure you pull first everytime, pero kapag may conflict paisaisa iadd instead of 'git add .' so git add 'filename' lang)
+--terminal
+*while in the folder*
+git init
+git status 
+git add .
+git status //optional, para makita kung oks na lahat
+git commit -m "commentsnameblah"
+git push
+*log in*
+
+CREATING NEW REPO
+*create repo on github.com first*
+--terminal
+*get in folder*
+git init
+git status
+git add .
+git commit -m "commentsnameblah"
+git remote add origin https://github.com/Zaaraah/reservationSystem.git
+git push -u origin master
+*log in*

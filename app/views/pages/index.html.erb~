@@ -1,0 +1,65 @@
+ Skip to content
+This repository
+
+    Explore
+    Gist
+    Blog
+    Help
+
+    Zaaraah Zaaraah
+
+    1
+    0
+    0
+
+lglputong/residenceSystem
+
+residenceSystem/app/views/pages/index.html.erb
+lglputong lglputong an hour ago
+with reservation
+
+1 contributor
+40 lines (40 sloc) 1.07 kb
+<!DOCTYPE html>
+<html>
+<head>
+<%= stylesheet_link_tag "application", :media => "all" %>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-1">HOME</div>
+<div class="col-md-1">ABOUT</div>
+<div class="col-md-1">CONTACT US </div>
+<div class="col-md-8"></div>
+<div class="col-md-1">LOG IN</div>
+</div>
+</div>
+<br />
+<h1 class = "title"> ATENEO RESIDENCE HALLS </h1>
+<h2 class = "title"> RESERVATION SYSTEM </h2>
+<div id = "announcements">
+<div id = "announcements-image">
+<%= image_tag("dorm.jpg", :alt => "sample dorm pic") %>
+</div>
+<div id = "announcements-text">
+SITE ANNOUNCEMENTS
+<br />
+LOREM IPSUM
+<br />
+Duis aute irure Duis aute irureDuis aute irureDuis aute irureDuis aute irure
+<br />
+LOREM IPSUM
+<br />
+Duis aute irure Duis aute irureDuis aute irureDuis aute irureDuis aute irure
+</div>
+</div>
+<div>
+<%= link_to "Reservations", reservations_path %>
+<%= link_to "New Reservation", new_reservation_path %>
+</div>
+</body>
+</html>
+
+  
+
