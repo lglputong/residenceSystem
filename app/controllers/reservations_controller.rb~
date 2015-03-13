@@ -19,7 +19,6 @@ class ReservationsController < ApplicationController
 	end
 
 	def success
-		@reservation = Reservation.find(:id)
 	end
 
 	def destroy
