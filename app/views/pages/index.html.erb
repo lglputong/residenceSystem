@@ -12,6 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans:700,400' rel='stylesheet' type='text/css'>
 </head>
 
+<body>
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
 	<ul class="nav navbar-nav">
@@ -33,23 +34,25 @@
 	</div>
 	
 	<div class = "row" id="centerpiece">
-		<div id="imgcont" class = "col-md-5">
-			<img src="./images/dorm.jpg" class="img-responsive" alt="dorm pic"> </img>
+		<div id="imgcont" class = "col-xs-6">
+			<img id="drmimg" src="./images/dorm.jpg" class="img-responsive" alt="dorm pic"> </img>
 		</div>
-		<div class = "col-md-5">
-			SITE ANNOUNCEMENTS
-			<br />
-			LOREM IPSUM
-			<br />
-			<br />
-			LOREM IPSUM
-			<br />
-			Duis aute irure Duis aute irureDuis aute irureDuis aute irureDuis aute irure
+		<div id="rtsd" class = "col-xs-6">
+			<h5 id="san">SITE ANNOUNCEMENTS</h5>
+			<div>
+				<div id="sah" class = "col-xs-4">LOREM IPSUM</div><br>
+				<p id="psa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.  <a href="#" id="rdmr">  Read More</a></p>
 			</div>
+			<div>
+				<div id="sah" class = "col-xs-4">LOREM IPSUM</div><br>
+				<p id="psa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.  <a href="#" id="rdmr">  Read More</a></p>
+			</div>
+	
+		</div>
 	</div>
 </div>
 
-<div class="container-fluid">
+<div id="boxes" class="container-fluid">
 	<div class="row">
 		<div class="row">
 			<div class = "col-xs-1">
@@ -59,7 +62,7 @@
 			</div>
 
 			<div id="sectright" class = "col-xs-5">
-				<h4>READMISSION</h4>
+				<h4>ADMISSION</h4>
 			</div>
 			<div class = "col-xs-1">
 			</div>
@@ -72,7 +75,10 @@
 						<img id="sdimg" src = "./images/Teaser1.png" class="img-responsive" alt = "sdimg">
 					</div>
 					<div id="reserve" class = "col-xs-7">
-						<p>a</p>
+						<h5 id="rr">Reservations</h5>
+						<button type="button" class="btn btn-default btn-xs">VENUE</button>
+						</br>
+						<button type="button" class="btn btn-default btn-xs">EQUIPMENT</button>
 					</div>
 			</div>
 			<div class = "col-xs-3">
@@ -80,7 +86,8 @@
 						<img id="sdimg" src = "./images/Teaser1.png" class="img-responsive" alt = "sdimg">
 					</div>
 					<div id="view" class = "col-xs-7">
-						<p>a</p>
+						<h5 id="rr">View<br>Gallery</h5>
+						<p id="bxtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 			</div>
 			<div class = "col-xs-3">
@@ -88,7 +95,9 @@
 						<img id="sdimg" src = "./images/Teaser1.png" class="img-responsive" alt = "sdimg">
 					</div>
 					<div id="reserve" class = "col-xs-7">
-						<p>a</p>
+						<h5 id="rr">Readmission</h5>
+						<p id="bxtxt">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-default btn-xs">RESERVE ROOM</button>
 					</div>
 			</div>
 			<div class = "col-xs-3">
@@ -96,7 +105,8 @@
 						<img id="sdimg" src = "./images/Teaser1.png" class="img-responsive" alt = "sdimg">
 					</div>
 					<div id="view" class = "col-xs-7">
-						<p>a</p>
+						<h5 id="rr">View<br>Results</h5>
+						<p id="bxtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 			</div>
 		</div>
@@ -147,3 +157,4 @@
 		</div>
 	</div>
 </footer>
+</body>

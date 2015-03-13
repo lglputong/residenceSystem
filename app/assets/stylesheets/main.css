@@ -3,6 +3,9 @@ body{
 	background-color: #efefef;
 	/*font-family: 'Quattrocento Sans', sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
+	width:100%;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 
 #bod{
@@ -42,11 +45,17 @@ a:hover{
 	text-shadow: 0 0 2px;
 }
 
-h1, h3, h4{
+h1, h3, #hd{
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	/*font-weight: 600;*/
 }
+
+h4{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 15px;
+}
+
 
 h3{
 	margin-top: -10px;
@@ -80,3 +89,8 @@ h3{
 #title{
 	margin-top: -13px;
 }
+
+.col-md-1.col-md-offset-2{
+	padding-bottom: 4px;
+}
+
