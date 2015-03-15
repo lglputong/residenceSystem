@@ -1,28 +1,28 @@
-<%= form_for reservation do |f| %>
+<%= simple_form_for reservation do |f| %>
 	<div>School Year</div>
-	<%= f.text_field :school_year %>
+	<%= f.input :school_year %>
 	<div>Last Name</div>
-	<%= f.text_field :last_name %>
+	<%= f.input :last_name %>
 	<div>First Name</div>
-	<%= f.text_field :first_name %>
+	<%= f.input :first_name %>
 	<div>M.I</div>
-	<%= f.text_field :middle_initial %>
+	<%= f.input :middle_initial %>
 	<div>Mobile #</div>
-	<%= f.text_field :mobile_number %>
+	<%= f.input :mobile_number %>
 	<div>Address</div>
-	<%= f.text_area :address %>
+	<%= f.input :address %>
 	<div>Student ID#</div>
-	<%= f.text_field :id_number %>
+	<%= f.input :id_number %>
 	<div>Year Level</div>
-	<%= f.text_field :year_level %>
+	<%= f.input :year_level %>
 	<div>Course</div>
-	<%= f.text_field :course %>
+	<%= f.input :course %>
 	<div>Dorm Scholar</div>
-	<%= f.text_field :dorm_scholar, as :radio_buttons %>
+	<%= f.input :dorm_scholar, as: :radio_buttons %>
 	<div>Building</div>
-	<%= f.text_field :building %>
+	<%= f.input :building %>
 	<div>Room #</div>
-	<%= f.text_field :room_number %>
+	<%= f.input :room_number %>
 	<div>Check In Date</div>
 	<%= f.date_select :check_in %>
 	<%= f.submit "Save" %>

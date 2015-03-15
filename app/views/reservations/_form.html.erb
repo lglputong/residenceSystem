@@ -1,30 +1,17 @@
 <%= simple_form_for reservation do |f| %>
-	<div>School Year</div>
 	<%= f.input :school_year %>
-	<div>Last Name</div>
 	<%= f.input :last_name %>
-	<div>First Name</div>
 	<%= f.input :first_name %>
-	<div>M.I</div>
 	<%= f.input :middle_initial %>
-	<div>Mobile #</div>
 	<%= f.input :mobile_number %>
-	<div>Address</div>
 	<%= f.input :address %>
-	<div>Student ID#</div>
 	<%= f.input :id_number %>
-	<div>Year Level</div>
 	<%= f.input :year_level %>
-	<div>Course</div>
 	<%= f.input :course %>
-	<div>Dorm Scholar</div>
 	<%= f.input :dorm_scholar, as: :radio_buttons %>
-	<div>Building</div>
 	<%= f.input :building %>
-	<div>Room #</div>
 	<%= f.input :room_number %>
-	<div>Check In Date</div>
-	<%= f.date_select :check_in %>
+	<%= f.input :check_in %>
 	<%= f.submit "Save" %>
 <% end %>
 
