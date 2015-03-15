@@ -32,4 +32,12 @@ class ReservationsController < ApplicationController
 		params.require(:reservation).permit!
 	end
 
+	def index
+	  @reservations = Reservation.order(:created_at)
+	  
+	  respond_to do |format|
+	    format.html
+	    format.csv { send_data @reservations.as_csv }
+	  end
+	end
 end

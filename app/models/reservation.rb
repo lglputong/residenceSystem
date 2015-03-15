@@ -10,4 +10,13 @@ class Reservation < ActiveRecord::Base
 	validates :building, presence: true
 	validates :room_number, presence: true, length: {is: 3}, numericality: { only_integer: true }
 	validates :check_in, presence: true
+
+	def self.as_csv
+  		CSV.generate do |csv|
+		    csv << column_names
+		    all.each do |item|
+		      csv << item.attributes.values_at(*column_names)
+    		end
+  		end
+	end
 end
