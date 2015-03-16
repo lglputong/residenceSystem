@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :pages
   resources :reservations
   
   root "pages#index"
   
   get 'pages/index'
-  get '/admin' => 'pages#admin_login'
+  get '/admin' => 'users#new'
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
   get '/studentlogin' => 'pages#student_login'

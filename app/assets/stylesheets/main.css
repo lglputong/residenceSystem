@@ -94,3 +94,14 @@ h3{
 	padding-bottom: 4px;
 }
 
+#pgtitle{
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#uc{
+	font-size: 100px;
+	margin-top: 20px;
+	color:  #e75735;
+}
