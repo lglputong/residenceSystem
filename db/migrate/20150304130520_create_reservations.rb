@@ -6,7 +6,7 @@ class CreateReservations < ActiveRecord::Migration
       t.string :first_name
       t.string :middle_initial
       t.string :mobile_number
-      t.string :address
+      t.string :email
       t.integer :id_number
       t.integer :year_level
       t.string :course

@@ -44,6 +44,7 @@
 	<%= reservation.status %>| 
 	<%= link_to "Edit", edit_reservation_path(reservation.id) %>
 	<%= link_to "Delete", reservation_path(reservation.id), method: :delete, data: { confirm: "Are you sure?" } %>
+	<br>
 <% end %>
 <a href = "reservations.csv"><button type = "button" class = "btn btn-default btn-xs"> Extract </button></a>
 	</div>

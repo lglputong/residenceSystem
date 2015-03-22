@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 20150322123733) do
     t.string   "first_name",     limit: 255
     t.string   "middle_initial", limit: 255
     t.string   "mobile_number",  limit: 11
-    t.string   "address",        limit: 255
+    t.string   "email",        limit: 255
     t.integer  "id_number",      limit: 4
     t.integer  "year_level",     limit: 1
     t.string   "course",         limit: 255
