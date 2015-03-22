@@ -11,15 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150318045146) do
+ActiveRecord::Schema.define(version: 20150321025935) do
 
   create_table "readmissions", force: :cascade do |t|
-    t.integer  "readmission_id", limit: 4
     t.date     "check_in"
     t.datetime "timestamp"
-    t.string   "school_year",    limit: 255
-    t.string   "semester",       limit: 255
-    t.binary   "status",         limit: 65535
+    t.string   "school_year", limit: 255
+    t.string   "semester",    limit: 255
+    t.binary   "status",      limit: 65535
   end
 
   create_table "reservations", force: :cascade do |t|
@@ -27,28 +26,38 @@ ActiveRecord::Schema.define(version: 20150318045146) do
     t.string   "last_name",      limit: 255
     t.string   "first_name",     limit: 255
     t.string   "middle_initial", limit: 255
-    t.integer  "mobile_number",  limit: 4
+    t.string   "mobile_number",  limit: 11
     t.string   "address",        limit: 255
     t.integer  "id_number",      limit: 4
-    t.boolean  "year_level",     limit: 1
+    t.integer  "year_level",     limit: 1
     t.string   "course",         limit: 255
     t.string   "dorm_scholar",   limit: 255
     t.string   "building",       limit: 255
     t.integer  "room_number",    limit: 4
     t.date     "check_in"
     t.date     "submission"
+    t.string "status", limit: 255
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
   end
 
   create_table "residents", id: false, force: :cascade do |t|
-    t.integer "id_number",    limit: 4
-    t.string  "name",         limit: 255
-    t.boolean "year",         limit: 1
-    t.string  "course",       limit: 255
-    t.string  "email",        limit: 255
-    t.integer "mobile",       limit: 4
-    t.binary  "dorm_scholar", limit: 65535
+    t.integer "id_number",      limit: 8
+    t.string  "first_name",     limit: 255
+    t.string  "last_name",      limit: 255
+    t.string  "middle_initial", limit: 1
+    t.boolean "year",           limit: 1
+    t.string  "course",         limit: 255
+    t.string  "email",          limit: 255
+    t.string  "mobile",         limit: 11
+    t.binary  "dorm_scholar",   limit: 65535
+  end
+
+  create_table "rooms", id: false, force: :cascade do |t|
+    t.string   "room_number", limit: 255
+    t.string   "building",    limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "users", force: :cascade do |t|

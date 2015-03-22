@@ -25,6 +25,21 @@
 	</ul>
   </div>
 </nav>
-<h1>New Reservation</h1>
-<hr>
-<%= render partial: "reservations/form", locals: { reservation: @reservation } %>
+<h1>Edit a Reservation</h1>
+<%= simple_form_for @reservation do |f| %>
+	<%= f.input :school_year %>
+	<%= f.input :last_name %>
+	<%= f.input :first_name %>
+	<%= f.input :middle_initial %>
+	<%= f.input :mobile_number %>
+	<%= f.input :address %>
+	<%= f.input :id_number %>
+	<%= f.input :year_level %>
+	<%= f.input :course %>
+	<%= f.input :dorm_scholar, as: :radio_buttons %>
+	<%= f.input :building, as: :select, collection: ["UD-N", "UD-S"] %>
+	<%= f.input :room_number %>
+	<%= f.input :check_in %>
+	<%= f.input :status, as: :radio_buttons, collection: ["Accepted", "Rejected", "Waitlisted"] %>
+	<%= f.submit "Save" %>
+<% end %> 

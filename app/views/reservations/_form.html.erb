@@ -9,7 +9,7 @@
 	<%= f.input :year_level %>
 	<%= f.input :course %>
 	<%= f.input :dorm_scholar, as: :radio_buttons %>
-	<%= f.input :building %>
+	<%= f.input :building, as: :select, collection: ["UD-N", "UD-S"] %>
 	<%= f.input :room_number %>
 	<%= f.input :check_in %>
 	<%= f.submit "Save" %>

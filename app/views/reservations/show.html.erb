@@ -25,6 +25,9 @@
 	</ul>
   </div>
 </nav>
-<h1>New Reservation</h1>
-<hr>
-<%= render partial: "reservations/form", locals: { reservation: @reservation } %>
+<h1>Find Results</h1>
+<%= simple_form_for @reservations do |f| %>
+	<%= f.input :last_name %>
+	<%= f.input :id_number %>
+	<%= f.submit "Search" %>
+<% end %> 

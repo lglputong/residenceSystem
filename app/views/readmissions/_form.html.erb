@@ -1,0 +1,22 @@
+<%= simple_nested_form_for readmission do |f| %>
+	<%= f.input :school_year %>
+	<%= f.input :semester %>
+	<%= f.fields_for :residents do |ff| %>
+		<%= ff.input :id_number %>
+		<%= ff.input :last_name %>
+		<%= ff.input :first_name %>
+		<%= ff.input :middle_initial %>
+		<%= ff.input :mobile_number %>
+		<%= ff.input :email %>
+		<%= ff.input :year_level %>
+		<%= ff.input :course %>
+		<%= ff.input :dorm_scholar, as: :radio_buttons %>
+	<% end %>
+	<%= f.fields_for :rooms do |ff| %>
+		<%= ff.input :building %>
+		<%= ff.input :room_number %>
+	<% end %>
+	<%= f.input :check_in %>
+	<%= f.submit "Save" %>
+<% end %>
+

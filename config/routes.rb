@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :pages
   resources :reservations
+  resources :readmissions
   
   root "pages#index"
   

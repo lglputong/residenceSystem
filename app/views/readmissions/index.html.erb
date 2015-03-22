@@ -1,0 +1,10 @@
+<h1>Pending Applications</h1>
+<br>
+
+<% @readmissions.each do |readmission| %>
+	<%= readmission.id_number %> | 
+	<%= link_to "Delete", readmission_path(readmission.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<% end %>
+<a href = "readmissions.csv"><button type = "button" class = "btn btn-default btn-xs"> Extract </button></a>
+
+
