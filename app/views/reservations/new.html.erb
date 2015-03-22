@@ -1,4 +1,4 @@
-<head>	
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,6 @@
 	<title>Ateneo Residence Halls Reservation System</title>
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="home.css">
 	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans:700,400' rel='stylesheet' type='text/css'>
 </head>
@@ -16,15 +15,46 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
 	<ul class="nav navbar-nav">
-	  <li role="presentation" ><a href="pages#index">Home</a></li>
-	  <li role="presentation"><a href="/about">About</a></li>
-	  <li role="presentation"><a href="/contact">Contact Us</a></li>
+	  <li role="presentation"><a href="/">Home</a></li>
+	  <li role="presentation"><a href="about">About</a></li>
+	  <li role="presentation" class="active"><a href="contact">Contact Us</a></li>
 	</ul>
 	<ul class="nav navbar-nav navbar-right">
-	  	<li id="right" role="presentation"><a href="/admin">Admin</a></li>
+	  	<li id="right" role="presentation"><a href="admin">Admin</a></li>
 	</ul>
   </div>
 </nav>
-<h1>New Reservation</h1>
-<hr>
+
+<div id="bod" class = "container-fluid">
+	<div class="row" id="title">
+		<h1> ATENEO RESIDENCE HALLS </h1>
+		<h3> RESERVATION SYSTEM </h3>
+	</div>
+	<div class = "row">
+		<h4 id="pgtitle">NEW RESERVATION</h4>
+	</div>
+	<div class="row">
+		
 <%= render partial: "reservations/form", locals: { reservation: @reservation } %>
+
+	</div>
+</div>
+
+<footer class="navbar navbar-fixed-bottom">
+	<div class="row">
+	  	<div class="col-md-8">
+	  	<p>
+			ATENEO DE MANILA UNIVERSITY. ALL RIGHTS RESERVED.
+			<br>
+			Katipunan Avenue Loyola Heights, Quezon City 1108, Philippines
+			<br>
+			426-6001 loc.5901-04 | ateneo.edu/univdorm
+		</p>
+		</div>
+		<div class="col-md-1 col-md-offset-2">
+		  	<p id="power">Powered by</p>
+		  	<img id="wols" src = "./images/wols.png" class="img-responsive" alt = "wols">
+		</div>
+	</div>
+</footer>
+</body>

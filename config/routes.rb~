@@ -1,16 +1,19 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :pages
   resources :reservations
+  resources :readmissions
   
   root "pages#index"
   
   get 'pages/index'
-  get '/admin' => 'pages#admin_login'
+  get '/admin' => 'users#new'
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
   get '/studentlogin' => 'pages#student_login'
+  get '/all' => 'reservations#all'
 
 
   
