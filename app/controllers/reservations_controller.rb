@@ -53,7 +53,7 @@ class ReservationsController < ApplicationController
 		@reservation.first_name = params[:reservation][:first_name]
 		@reservation.middle_initial = params[:reservation][:middle_initial]
 		@reservation.mobile_number = params[:reservation][:mobile_number]
-		@reservation.address = params[:reservation][:address]
+		@reservation.email = params[:reservation][:email]
 		@reservation.id_number = params[:reservation][:id_number]
 		@reservation.year_level = params[:reservation][:year_level]
 		@reservation.course = params[:reservation][:course]
@@ -70,7 +70,4 @@ class ReservationsController < ApplicationController
 		end
 	end
 
-	def show
-		@reservations = Reservation.new
-	end
 end

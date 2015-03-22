@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  users: MyString
+  reservation_date: 2015-03-23
+  start_time: 2015-03-23 01:02:05
+  end_time: 2015-03-23 01:02:05
+  status: MyString
+  purpose: MyString
+  timestamp: 2015-03-23 01:02:05
+  comment: MyText
+  id_number: 1
+  applicant_name: MyString
+  requesting_entity: MyString
+  mobile_number: MyString
+  email: MyString
+  yr_course: MyString
+  department: MyString
+
+two:
+  users: MyString
+  reservation_date: 2015-03-23
+  start_time: 2015-03-23 01:02:05
+  end_time: 2015-03-23 01:02:05
+  status: MyString
+  purpose: MyString
+  timestamp: 2015-03-23 01:02:05
+  comment: MyText
+  id_number: 1
+  applicant_name: MyString
+  requesting_entity: MyString
+  mobile_number: MyString
+  email: MyString
+  yr_course: MyString
+  department: MyString

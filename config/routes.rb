@@ -1,5 +1,61 @@
 Rails.application.routes.draw do
 
+  get 'facility_reservations/new'
+
+  get 'facility_reservations/create'
+
+  get 'facility_reservations/edit'
+
+  get 'facility_reservations/update'
+
+  get 'facility_reservations/destroy'
+
+  get 'facility_reservations/index'
+
+  get 'facility_reservations/show'
+
+  get 'equipment_reservations/new'
+
+  get 'equipment_reservations/create'
+
+  get 'equipment_reservations/edit'
+
+  get 'equipment_reservations/update'
+
+  get 'equipment_reservations/destroy'
+
+  get 'equipment_reservations/index'
+
+  get 'equipment_reservations/show'
+
+  get 'equipments/new'
+
+  get 'equipments/create'
+
+  get 'equipments/edit'
+
+  get 'equipments/update'
+
+  get 'equipments/destroy'
+
+  get 'equipments/index'
+
+  get 'equipments/show'
+
+  get 'venues/new'
+
+  get 'venues/create'
+
+  get 'venues/edit'
+
+  get 'venues/update'
+
+  get 'venues/destroy'
+
+  get 'venues/index'
+
+  get 'venues/show'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :pages
