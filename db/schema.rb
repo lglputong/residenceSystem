@@ -88,7 +88,11 @@ ActiveRecord::Schema.define(version: 20150322170226) do
     t.string   "first_name",     limit: 255
     t.string   "middle_initial", limit: 255
     t.string   "mobile_number",  limit: 11
+<<<<<<< HEAD
+    t.string   "email",          limit: 255
+=======
     t.string   "address",        limit: 255
+>>>>>>> bcb044a5efe16fa83bae14742e94969845d32531
     t.integer  "id_number",      limit: 4
     t.integer  "year_level",     limit: 1
     t.string   "course",         limit: 255
@@ -164,7 +168,13 @@ ActiveRecord::Schema.define(version: 20150322170226) do
   create_table "venues", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.string   "description", limit: 255
+<<<<<<< HEAD
+    t.float    "length",      limit: 24
+    t.float    "width",       limit: 24
+    t.float    "area",        limit: 24
+=======
     t.string   "dimensions",  limit: 255
+>>>>>>> bcb044a5efe16fa83bae14742e94969845d32531
     t.integer  "capacity",    limit: 4
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false

@@ -9,10 +9,11 @@ class ReservationsController < ApplicationController
 	end
 	
 	def create
-		@reservation = Reservation.new(reservation_params)
+		@reservation = Reservation.new(reservation_params)	
 		@reservation.status = "Waitlisted"
 
 		if @reservation.save
+			ReservationMailer.confirmation_email(@reservation).deliver_now
 			render :success
 		else
 			render :new
@@ -64,10 +65,10 @@ class ReservationsController < ApplicationController
 	 	@reservation.status = params[:reservation][:status]
 
 		if @reservation.save!
+			ReservationMailer.confirmation_email(@reservation).deliver_now
 			render :success
 		else
 			render :edit
 		end
 	end
-
 end
