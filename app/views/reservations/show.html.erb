@@ -31,12 +31,14 @@
 		<h3> RESERVATION SYSTEM </h3>
 	</div>
 	<div class = "row">
-		<h4 id="pgtitle">NEW RESERVATION</h4>
+		<h4 id="pgtitle">FIND RESULTS</h4>
 	</div>
 	<div class="row">
-		
-<%= render partial: "reservations/form", locals: { reservation: @reservation } %>
-
+		<%= simple_form_for @reservations do |f| %>
+	<%= f.input :last_name %>
+	<%= f.input :id_number %>
+	<%= f.submit "Search" %>
+<% end %> 
 	</div>
 </div>
 
