@@ -2,7 +2,7 @@
 
 <%= simple_form_for reservation do |f| %>
 <div class = "row">
-	<%= f.label :school_year %> <%= Date.current.year %> - <%=Date.current.year+1%>
+	<%= f.input :school_year %>
 </div>
 <div class = "row">
 <div class = 'col-xs-5'>
@@ -12,10 +12,6 @@
 
 </div>
 <div class = 'col-xs-5'>
-
-	<%= f.input :mobile_number %>
-	
-
 	<%= f.input :id_number %>
 	<%= f.input :year_level %>
 	<%= f.input :course %>
@@ -23,7 +19,7 @@
 </div>
 <div class = "row">
 		<%= f.input :mobile_number %>
-	<%= f.input :address %>
+	<%= f.input :email %>
 	<%= f.input :dorm_scholar, as: :radio_buttons %>
 	<%= f.input :building, as: :select, collection: ["UD-N", "UD-S"] %>
 	<%= f.input :room_number %>

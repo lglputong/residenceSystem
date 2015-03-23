@@ -5,6 +5,7 @@ gem 'simple_form'
 gem 'devise'
 gem "nested_form"
 gem 'activeadmin', github: 'activeadmin'
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'

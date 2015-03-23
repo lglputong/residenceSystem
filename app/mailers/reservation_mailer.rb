@@ -1,5 +1,5 @@
 class ReservationMailer < ApplicationMailer
-	default from: "lance.putong@obf.ateneo.edu"
+	default from: "lance435@gmail.com"
 
 	def confirmation_email(reservation)
 		@reservation = reservation

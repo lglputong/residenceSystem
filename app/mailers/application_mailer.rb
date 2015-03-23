@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "lance.putong@obf.ateneo.edu"
+  default from: "lance435@gmail.com"
   layout 'mailer'
 end
