@@ -69,7 +69,7 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
   get '/studentlogin' => 'pages#student_login'
-  get '/test' => 'reservations#all'
+  get '/test' => 'reservations#test'
 
 
   
