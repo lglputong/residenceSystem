@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150322123733) do
+ActiveRecord::Schema.define(version: 20150322170226) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -46,6 +46,34 @@ ActiveRecord::Schema.define(version: 20150322123733) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "equipment", force: :cascade do |t|
+    t.string   "name_string",        limit: 255
+    t.string   "description_string", limit: 255
+    t.integer  "quantity",           limit: 4
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
+  create_table "equipment_reservations", force: :cascade do |t|
+    t.string   "users",             limit: 255
+    t.date     "reservation_date"
+    t.time     "start_time"
+    t.time     "end_time"
+    t.string   "status",            limit: 255
+    t.string   "purpose",           limit: 255
+    t.datetime "timestamp"
+    t.text     "comment",           limit: 65535
+    t.integer  "id_number",         limit: 4
+    t.string   "applicant_name",    limit: 255
+    t.string   "requesting_entity", limit: 255
+    t.string   "mobile_number",     limit: 255
+    t.string   "email",             limit: 255
+    t.string   "yr_course",         limit: 255
+    t.string   "department",        limit: 255
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
   create_table "readmissions", force: :cascade do |t|
     t.date     "check_in"
     t.datetime "timestamp"
@@ -60,7 +88,7 @@ ActiveRecord::Schema.define(version: 20150322123733) do
     t.string   "first_name",     limit: 255
     t.string   "middle_initial", limit: 255
     t.string   "mobile_number",  limit: 11
-    t.string   "email",        limit: 255
+    t.string   "email",          limit: 255
     t.integer  "id_number",      limit: 4
     t.integer  "year_level",     limit: 1
     t.string   "course",         limit: 255
@@ -112,5 +140,36 @@ ActiveRecord::Schema.define(version: 20150322123733) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
+
+  create_table "venue_reservations", force: :cascade do |t|
+    t.string   "users",             limit: 255
+    t.date     "reservation_date"
+    t.time     "start_time"
+    t.time     "end_time"
+    t.string   "status",            limit: 255
+    t.string   "purpose",           limit: 255
+    t.datetime "timestamp"
+    t.text     "comment",           limit: 65535
+    t.integer  "id_number",         limit: 4
+    t.string   "applicant_name",    limit: 255
+    t.string   "requesting_entity", limit: 255
+    t.string   "mobile_number",     limit: 255
+    t.string   "email",             limit: 255
+    t.string   "yr_course",         limit: 255
+    t.string   "department",        limit: 255
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  create_table "venues", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.float    "length",      limit: 24
+    t.float    "width",       limit: 24
+    t.float    "area",        limit: 24
+    t.integer  "capacity",    limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
 
 end

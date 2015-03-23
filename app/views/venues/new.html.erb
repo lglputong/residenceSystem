@@ -1,2 +1,30 @@
-<h1>Venues#new</h1>
-<p>Find me in app/views/venues/new.html.erb</p>
+<head>	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Ateneo Residence Halls Reservation System</title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans:700,400' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+	<ul class="nav navbar-nav">
+	  <li role="presentation" ><a href="/">Home</a></li>
+	  <li role="presentation"><a href="/about">About</a></li>
+	  <li role="presentation"><a href="/contact">Contact Us</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+	  	<li id="right" role="presentation"><a href="/admin">Admin</a></li>
+	</ul>
+  </div>
+</nav>
+<h1>New Venue</h1>
+<hr>
+<%= render partial: "venues/form", locals: { venue: @venue } %>

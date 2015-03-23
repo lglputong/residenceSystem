@@ -13,6 +13,7 @@ class ReservationsController < ApplicationController
 		@reservation.status = "Waitlisted"
 
 		if @reservation.save
+			ReservationMailer.confirmation_email(@reservation).deliver_now
 			render :success
 		else
 			render :new
@@ -69,5 +70,4 @@ class ReservationsController < ApplicationController
 			render :edit
 		end
 	end
-
 end

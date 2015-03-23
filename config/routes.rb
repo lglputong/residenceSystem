@@ -61,6 +61,10 @@ Rails.application.routes.draw do
   resources :pages
   resources :reservations
   resources :readmissions
+  resources :venues
+  resources :equipments
+  resources :facility_reservations
+  resources :equipment_reservations
   
   root "pages#index"
   
